@@ -1,0 +1,1294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#eef7f1" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#101a20" media="(prefers-color-scheme: dark)" />
+  <meta name="description" content="Free online student tools: calculate weighted CGPA, estimate Pakistan university admission merit, use a 25-minute Pomodoro study timer, and generate APA 7 or MLA 9 citations for books and websites." />
+  <link rel="canonical" href="https://khuramshahzadmarar10-afk.github.io/student-tools/" />
+  <meta property="og:title" content="Free Online Student Tools — CGPA, Merit, Pomodoro & Citations" />
+  <meta property="og:description" content="Calculate weighted CGPA, estimate Pakistan university admission merit, focus with a 25-minute Pomodoro timer, and generate APA 7 or MLA 9 citations online for free." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://khuramshahzadmarar10-afk.github.io/student-tools/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Free Online Student Tools — CGPA, Merit, Pomodoro & Citations" />
+  <meta name="twitter:description" content="Calculate weighted CGPA, estimate Pakistan university admission merit, focus with a 25-minute Pomodoro timer, and generate APA 7 or MLA 9 citations online for free." />
+  <link rel="icon" href="data:," />
+  <title>Free Online Student Tools | CGPA, Merit, Pomodoro & Citations</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BDSXSB7FQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3BDSXSB7FQ');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Urbanist:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Free Online Student Tools","url":"https://khuramshahzadmarar10-afk.github.io/student-tools/","applicationCategory":"EducationalApplication","operatingSystem":"Any","description":"Free online student tools for weighted CGPA calculation, Pakistan university admission merit estimates, 25-minute Pomodoro study sessions, and APA 7 or MLA 9 citation generation for books and websites.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #eef7f1;
+      --paper: #fffdf8;
+      --paper-2: #f7fbf8;
+      --ink: #132a35;
+      --muted: #53656c;
+      --line: #cbdad1;
+      --navy: #174b63;
+      --navy-strong: #10384c;
+      --mint: #bce7cf;
+      --mint-strong: #157a61;
+      --sun: #f4ba43;
+      --coral: #e26952;
+      --danger: #b23a32;
+      --focus: #0b6c8d;
+      --shadow: 0 14px 36px rgba(23, 75, 99, .10);
+      --shadow-small: 0 5px 14px rgba(23, 75, 99, .09);
+      --radius: 18px;
+      --radius-small: 10px;
+      --font: ui-rounded, "Avenir Next", "Segoe UI", system-ui, sans-serif;
+      --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101a20;
+        --paper: #17252c;
+        --paper-2: #1c2d34;
+        --ink: #edf6ef;
+        --muted: #b6c7c4;
+        --line: #385057;
+        --navy: #7cc4df;
+        --navy-strong: #a2d6e9;
+        --mint: #204d40;
+        --mint-strong: #76d4b2;
+        --sun: #edbb54;
+        --coral: #f18a73;
+        --danger: #ff9c91;
+        --focus: #8ed9f3;
+        --shadow: 0 16px 40px rgba(0, 0, 0, .24);
+        --shadow-small: 0 5px 18px rgba(0, 0, 0, .2);
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(23,75,99,.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23,75,99,.045) 1px, transparent 1px),
+        var(--bg);
+      background-size: 28px 28px;
+      font-family: var(--font);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    button, input, select { font: inherit; }
+    button { color: inherit; }
+    a { color: var(--navy); text-underline-offset: 3px; }
+    svg { display: block; }
+    .page { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+    .hero {
+      position: relative;
+      padding: clamp(60px, 9vw, 116px) 0 46px;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: clamp(-100px, 2vw, 10px);
+      top: 42px;
+      width: 250px;
+      height: 250px;
+      background: var(--sun);
+      opacity: .18;
+      border-radius: 50%;
+      filter: saturate(.8);
+      z-index: -1;
+    }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr); align-items: end; gap: 48px; }
+    .kicker { display: flex; align-items: center; gap: 10px; margin: 0 0 18px; color: var(--mint-strong); font-weight: 760; }
+    .kicker::before { content: ""; width: 38px; height: 4px; background: currentColor; border-radius: 9px; }
+    h1, h2, h3 { margin: 0; line-height: 1.08; letter-spacing: -.035em; }
+    h1 { max-width: 760px; font-size: clamp(43px, 7vw, 82px); font-weight: 850; }
+    .hero h1 em { color: var(--coral); font-style: normal; }
+    .hero-copy { max-width: 660px; margin: 24px 0 0; font-size: clamp(18px, 2.1vw, 22px); color: var(--muted); }
+    .quick-note { align-self: stretch; display: grid; grid-template-rows: auto 1fr; gap: 16px; padding: 24px; background: var(--paper); border: 1px solid var(--line); box-shadow: var(--shadow); transform: rotate(1deg); }
+    .quick-note strong { font-size: 15px; color: var(--navy); }
+    .quick-note ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; align-content: center; }
+    .quick-note li { display: grid; grid-template-columns: 32px 1fr; gap: 12px; align-items: center; }
+    .number { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--mint); color: var(--navy-strong); font-weight: 850; }
+    .jumpbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      margin: 0 auto 54px;
+      padding: 10px;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      background: color-mix(in srgb, var(--paper) 92%, transparent);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-small);
+      backdrop-filter: blur(12px);
+      border-radius: 14px;
+    }
+    .jumpbar::-webkit-scrollbar { display: none; }
+    .jumpbar a { flex: 1 0 auto; min-width: 130px; padding: 10px 13px; text-decoration: none; text-align: center; border-radius: 8px; color: var(--muted); font-weight: 760; font-size: 14px; }
+    .jumpbar a:hover, .jumpbar a:focus-visible { background: var(--mint); color: var(--navy-strong); outline: none; }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 22px; }
+    .section-head h2 { font-size: clamp(30px, 4vw, 48px); }
+    .section-head p { max-width: 520px; margin: 0; color: var(--muted); }
+    .tools-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-bottom: 76px; }
+    .tool-card-link {
+      min-height: 188px;
+      padding: 25px;
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      gap: 18px;
+      align-content: start;
+      text-decoration: none;
+      color: inherit;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-small);
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .tool-card-link:nth-child(2), .tool-card-link:nth-child(3) { border-radius: 0 28px 0 28px; }
+    .tool-card-link:nth-child(1), .tool-card-link:nth-child(4) { border-radius: 28px 0 28px 0; }
+    .tool-card-link:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--mint-strong); }
+    .tool-icon { width: 50px; height: 50px; padding: 12px; border-radius: 14px; background: var(--mint); color: var(--navy-strong); }
+    .tool-card-link:nth-child(2) .tool-icon { background: color-mix(in srgb, var(--sun) 46%, var(--paper)); }
+    .tool-card-link:nth-child(3) .tool-icon { background: color-mix(in srgb, var(--coral) 22%, var(--paper)); }
+    .tool-card-link:nth-child(4) .tool-icon { background: color-mix(in srgb, var(--navy) 15%, var(--paper)); }
+    .tool-card-link h3 { margin: 2px 0 9px; font-size: 23px; }
+    .tool-card-link p { margin: 0; color: var(--muted); }
+    .arrow { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; color: var(--navy); font-weight: 800; font-size: 14px; }
+    .tool-section { scroll-margin-top: 92px; margin: 0 0 32px; padding: clamp(24px, 4vw, 42px); background: var(--paper); border: 1px solid var(--line); box-shadow: var(--shadow); }
+    .tool-section:nth-of-type(odd) { border-radius: 34px 6px 34px 6px; }
+    .tool-section:nth-of-type(even) { border-radius: 6px 34px 6px 34px; }
+    .tool-title { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+    .tool-title h2 { font-size: clamp(29px, 4vw, 43px); }
+    .tool-title .tool-icon { flex: 0 0 50px; }
+    .seo-copy { max-width: 780px; margin: 0 0 30px; color: var(--muted); }
+    .workspace { padding-top: 28px; border-top: 1px dashed var(--line); }
+    .field-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .field-grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    label { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 760; color: var(--muted); }
+    input, select {
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 12px;
+      color: var(--ink);
+      background: var(--paper-2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-small);
+      outline: none;
+    }
+    input:focus, select:focus { border-color: var(--focus); box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 22%, transparent); }
+    .button-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .btn {
+      min-height: 44px;
+      padding: 10px 17px;
+      border: 0;
+      border-radius: 10px;
+      background: var(--navy);
+      color: var(--paper);
+      font-weight: 800;
+      cursor: pointer;
+    }
+    @media (prefers-color-scheme: dark) { .btn { color: #0c1d23; } }
+    .btn:hover { background: var(--navy-strong); }
+    .btn.secondary { background: var(--mint); color: var(--navy-strong); }
+    .btn.ghost { background: transparent; color: var(--navy); border: 1px solid var(--line); }
+    .btn.danger { background: transparent; color: var(--danger); border: 1px solid var(--line); }
+    .btn:focus-visible, .icon-btn:focus-visible, .source-tab:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus) 45%, transparent); outline-offset: 2px; }
+    .semester-list { display: grid; gap: 10px; }
+    .semester-row { display: grid; grid-template-columns: 1.4fr 1fr .8fr 42px; gap: 10px; align-items: end; }
+    .icon-btn { width: 42px; height: 46px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 9px; background: transparent; color: var(--danger); cursor: pointer; }
+    .result-panel { margin-top: 22px; padding: 20px; background: color-mix(in srgb, var(--mint) 48%, var(--paper)); border-radius: 14px; }
+    .result-panel[hidden] { display: none; }
+    .result-label { margin: 0; color: var(--muted); font-size: 14px; font-weight: 750; }
+    .result-number { margin: 2px 0 4px; font-size: clamp(38px, 7vw, 62px); font-weight: 900; line-height: 1; color: var(--navy-strong); }
+    .result-note, .validation { margin: 8px 0 0; color: var(--muted); }
+    .validation { color: var(--danger); font-weight: 680; }
+    .formula-note { margin: 18px 0 0; padding: 13px 15px; border-left: 4px solid var(--sun); background: color-mix(in srgb, var(--sun) 12%, var(--paper)); color: var(--muted); font-size: 14px; }
+    .weight-total { margin: 15px 0 0; color: var(--muted); font-size: 14px; }
+    .timer-layout { display: grid; grid-template-columns: minmax(250px, .8fr) minmax(280px, 1.2fr); gap: 26px; align-items: center; }
+    .timer-face { width: min(300px, 100%); aspect-ratio: 1; margin: 0 auto; padding: 20px; display: grid; place-items: center; text-align: center; border: 13px solid var(--mint); border-radius: 50%; background: var(--paper-2); box-shadow: inset 0 0 0 1px var(--line); }
+    .timer-digits { font-family: var(--mono); font-size: clamp(46px, 8vw, 70px); font-weight: 850; letter-spacing: -.06em; line-height: 1; }
+    .timer-mode { margin-top: 8px; color: var(--muted); font-weight: 750; }
+    .session-count { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 14px; margin-top: 18px; padding: 16px; background: var(--paper-2); border: 1px solid var(--line); border-radius: 12px; }
+    .session-count strong { font-size: 30px; color: var(--coral); }
+    .session-count span { color: var(--muted); }
+    .citation-tabs { display: flex; gap: 8px; margin-bottom: 20px; }
+    .source-tab { padding: 10px 17px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--muted); font-weight: 800; cursor: pointer; }
+    .source-tab[aria-selected="true"] { color: var(--navy-strong); background: var(--mint); border-color: transparent; }
+    .citation-output { margin-top: 22px; padding: 20px; background: var(--paper-2); border: 1px solid var(--line); border-radius: 14px; }
+    .citation-output[hidden] { display: none; }
+    .citation-style { margin-top: 18px; }
+    .citation-style:first-child { margin-top: 0; }
+    .citation-style h4 { margin: 0 0 7px; color: var(--navy); }
+    .citation-text { margin: 0; padding-left: 2em; text-indent: -2em; overflow-wrap: anywhere; }
+    .copy-status { margin-left: 10px; color: var(--mint-strong); font-size: 14px; font-weight: 700; }
+    .faq { padding: 62px 0 30px; }
+    .faq h2 { font-size: clamp(34px, 5vw, 56px); margin-bottom: 24px; }
+    details { background: var(--paper); border-top: 1px solid var(--line); padding: 19px 2px; }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary { cursor: pointer; font-weight: 820; font-size: 18px; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; font-size: 25px; color: var(--coral); }
+    details[open] summary::after { content: "−"; }
+    details p { max-width: 830px; margin: 12px 0 0; color: var(--muted); }
+    footer { margin-top: 56px; padding: 28px 0 calc(28px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); color: var(--muted); }
+    .footer-tools { padding-bottom: 28px; margin-bottom: 24px; border-bottom: 1px solid var(--line); }
+    .footer-tools h2 { margin: 0 0 18px; color: var(--ink); font-size: clamp(25px, 3vw, 34px); }
+    .footer-tools-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 28px; }
+    .footer-tool-link { display: block; padding: 14px 0; border-top: 1px solid var(--line); color: inherit; text-decoration: none; }
+    .footer-tool-link strong { display: block; color: var(--navy); font-family: var(--display); font-size: 17px; line-height: 1.25; }
+    .footer-tool-link span { display: block; margin-top: 4px; color: var(--muted); font-size: 14px; line-height: 1.45; }
+    .footer-tool-link:hover strong { color: var(--mint-strong); }
+    .footer-tool-link:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus) 45%, transparent); outline-offset: 3px; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 24px; align-items: center; }
+    .footer-inner p { margin: 0; }
+    .footer-mark { display: inline-flex; align-items: center; gap: 9px; font-weight: 800; color: var(--navy); }
+    .footer-mark::before { content: ""; width: 20px; height: 20px; background: var(--coral); border-radius: 4px 50% 50% 50%; transform: rotate(15deg); }
+    .sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .ad-container { width: 100%; max-width: 100%; margin: 18px auto; text-align: center; overflow: hidden; }
+    @media (max-width: 820px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 28px; }
+      .quick-note { max-width: 620px; transform: none; }
+      .tools-grid { grid-template-columns: 1fr; }
+      .timer-layout { grid-template-columns: 1fr; }
+      .field-grid.three { grid-template-columns: 1fr 1fr; }
+      .semester-row { grid-template-columns: 1fr 1fr 42px; }
+      .semester-row .semester-name { grid-column: 1 / -1; }
+      .footer-tools-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 600px) {
+      .page { width: min(100% - 24px, 1180px); }
+      .hero { padding-top: 46px; }
+      .hero h1 { font-size: clamp(40px, 13vw, 59px); }
+      .quick-note { padding: 19px; }
+      .jumpbar { width: 100%; margin-left: 0; border-radius: 10px; flex-wrap: wrap; overflow: visible; }
+      .jumpbar a { flex: 1 1 calc(50% - 8px); min-width: 0; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 12px; }
+      .tool-card-link { padding: 20px; grid-template-columns: 44px 1fr; }
+      .tool-icon { width: 44px; height: 44px; padding: 10px; }
+      .tool-section { padding: 22px 18px; border-radius: 20px 4px 20px 4px !important; }
+      .tool-title { align-items: flex-start; }
+      .field-grid, .field-grid.three { grid-template-columns: 1fr; }
+      .semester-row { grid-template-columns: 1fr 1fr 42px; padding-bottom: 13px; border-bottom: 1px dashed var(--line); }
+      .timer-face { max-width: 260px; }
+      .footer-tools-grid { grid-template-columns: 1fr; }
+      .footer-inner { display: block; }
+      .footer-inner p + p { margin-top: 9px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+
+    /* Premium visual refresh */
+    :root {
+      --bg: #f4f9ff;
+      --paper: #ffffff;
+      --paper-2: #f6f9fc;
+      --ink: #11243b;
+      --muted: #50627a;
+      --line: #dce6ee;
+      --navy: #146b8f;
+      --navy-strong: #0c4567;
+      --mint: #c9f4e4;
+      --mint-strong: #08765f;
+      --sun: #ffc955;
+      --coral: #f0675b;
+      --focus: #087ba2;
+      --shadow: 0 24px 60px rgba(21, 65, 94, .13), 0 3px 10px rgba(21, 65, 94, .06);
+      --shadow-small: 0 12px 30px rgba(21, 65, 94, .09), 0 2px 7px rgba(21, 65, 94, .05);
+      --font: "DM Sans", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+      --display: "Urbanist", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #09151f;
+        --paper: #12232f;
+        --paper-2: #172b38;
+        --ink: #f3f7fb;
+        --muted: #b4c4d3;
+        --line: #2d4657;
+        --navy: #70d3ee;
+        --navy-strong: #b2ebf8;
+        --mint: #174f43;
+        --mint-strong: #7ce2c2;
+        --sun: #ffd26f;
+        --coral: #ff8b7f;
+        --focus: #7edcf3;
+        --shadow: 0 24px 60px rgba(0, 0, 0, .32), 0 3px 12px rgba(0, 0, 0, .24);
+        --shadow-small: 0 12px 30px rgba(0, 0, 0, .22), 0 2px 8px rgba(0, 0, 0, .2);
+      }
+    }
+    body {
+      background:
+        radial-gradient(circle at 8% 26%, color-mix(in srgb, var(--mint) 24%, transparent) 0, transparent 26rem),
+        radial-gradient(circle at 92% 66%, color-mix(in srgb, var(--sun) 10%, transparent) 0, transparent 24rem),
+        var(--bg);
+      font-weight: 500;
+    }
+    h1, h2, h3, h4, summary, .footer-mark { font-family: var(--display); }
+    h1, h2, h3 { letter-spacing: -.045em; }
+    .page { width: min(1200px, calc(100% - 40px)); }
+    .hero {
+      margin: 18px auto 44px;
+      width: min(1380px, calc(100% - 28px));
+      padding: clamp(58px, 8vw, 108px) 0 clamp(50px, 7vw, 86px);
+      border-radius: 36px;
+      isolation: isolate;
+      background:
+        radial-gradient(circle at 84% 12%, rgba(255, 255, 255, .72) 0 6%, transparent 18%),
+        radial-gradient(circle at 10% 90%, rgba(255, 203, 82, .38) 0 8%, transparent 28%),
+        linear-gradient(128deg, #9be9ec 0%, #c6f1dc 34%, #e8efff 68%, #ffd9bd 100%);
+      box-shadow: 0 24px 70px rgba(22, 92, 113, .14);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background-image: radial-gradient(rgba(17, 64, 83, .13) 1px, transparent 1px);
+      background-size: 22px 22px;
+      opacity: .32;
+      z-index: -1;
+      mask-image: linear-gradient(105deg, #000, transparent 62%);
+    }
+    .hero::after {
+      right: clamp(-26px, 3vw, 52px);
+      top: auto;
+      bottom: -74px;
+      width: 270px;
+      height: 270px;
+      opacity: .3;
+      background: transparent;
+      border: 42px solid rgba(255, 255, 255, .58);
+      filter: none;
+      z-index: -1;
+    }
+    .hero-grid { align-items: center; gap: clamp(34px, 6vw, 74px); }
+    .kicker { margin-bottom: 20px; color: #075f5a; font-size: 15px; letter-spacing: .01em; }
+    .kicker::before { width: 46px; height: 5px; background: var(--coral); }
+    h1 { font-family: var(--display); font-size: clamp(48px, 7.4vw, 92px); line-height: .96; letter-spacing: -.06em; text-wrap: balance; }
+    .hero h1, .hero-copy { color: #102d3b; }
+    .hero h1 em { color: #db4d45; text-shadow: 0 2px 0 rgba(255,255,255,.45); }
+    .hero-copy { max-width: 670px; margin-top: 26px; font-size: clamp(18px, 2vw, 22px); font-weight: 600; line-height: 1.55; }
+    .quick-note {
+      min-height: 278px;
+      padding: 30px;
+      border: 1px solid rgba(255, 255, 255, .8);
+      border-radius: 28px 8px 28px 28px;
+      background: rgba(255, 255, 255, .88);
+      color: #163244;
+      box-shadow: 0 28px 58px rgba(18, 74, 91, .17), inset 0 1px 0 rgba(255,255,255,.8);
+      transform: rotate(1.4deg);
+    }
+    .quick-note strong { font-family: var(--display); color: #164d69; font-size: 17px; }
+    .quick-note ul { gap: 15px; }
+    .quick-note li { font-weight: 600; }
+    .number { background: #bcefd8; color: #075847; box-shadow: inset 0 0 0 1px rgba(7,88,71,.08); }
+    .jumpbar {
+      margin-bottom: 68px;
+      padding: 8px;
+      border-color: color-mix(in srgb, var(--line) 85%, transparent);
+      border-radius: 18px;
+      box-shadow: 0 10px 28px rgba(19, 65, 91, .09);
+    }
+    .jumpbar a { padding: 11px 14px; border-radius: 12px; }
+    .jumpbar a:hover, .jumpbar a:focus-visible { background: linear-gradient(135deg, var(--mint), color-mix(in srgb, var(--mint) 55%, var(--paper))); }
+    .section-head { margin-bottom: 28px; }
+    .section-head h2 { font-size: clamp(38px, 5vw, 58px); }
+    .section-head p { font-size: 16px; }
+    .tools-grid { gap: 22px; margin-bottom: 92px; }
+    .tool-card-link {
+      position: relative;
+      min-height: 210px;
+      padding: 30px;
+      grid-template-columns: 62px 1fr;
+      gap: 20px;
+      align-items: start;
+      overflow: hidden;
+      border: 0;
+      border-radius: 24px !important;
+      background:
+        linear-gradient(145deg, color-mix(in srgb, var(--mint) 18%, var(--paper)) 0%, var(--paper) 58%);
+      box-shadow: var(--shadow-small);
+      transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s ease, background-color .28s ease;
+    }
+    .tool-card-link:nth-child(2) { background: linear-gradient(145deg, color-mix(in srgb, var(--sun) 16%, var(--paper)) 0%, var(--paper) 58%); }
+    .tool-card-link:nth-child(3) { background: linear-gradient(145deg, color-mix(in srgb, var(--coral) 11%, var(--paper)) 0%, var(--paper) 58%); }
+    .tool-card-link:nth-child(4) { background: linear-gradient(145deg, color-mix(in srgb, var(--navy) 10%, var(--paper)) 0%, var(--paper) 58%); }
+    .tool-card-link::after {
+      content: "";
+      position: absolute;
+      right: -38px;
+      bottom: -42px;
+      width: 112px;
+      height: 112px;
+      border: 20px solid color-mix(in srgb, var(--mint) 38%, transparent);
+      border-radius: 50%;
+      opacity: .45;
+      pointer-events: none;
+    }
+    .tool-card-link:hover { transform: translateY(-7px); box-shadow: 0 24px 54px rgba(21, 65, 94, .17); border-color: transparent; }
+    .tool-card-link:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus) 48%, transparent); outline-offset: 4px; }
+    .tool-icon {
+      width: 60px;
+      height: 60px;
+      padding: 15px;
+      border-radius: 18px;
+      background: linear-gradient(145deg, #d1faea, #aee8d1);
+      color: #075e4d;
+      box-shadow: 0 9px 22px rgba(21, 122, 97, .16), inset 0 1px 0 rgba(255,255,255,.6);
+    }
+    .tool-card-link:nth-child(2) .tool-icon { background: linear-gradient(145deg, #fff1c5, #ffd77a); color: #754c00; }
+    .tool-card-link:nth-child(3) .tool-icon { background: linear-gradient(145deg, #ffe1db, #ffb8aa); color: #8c3028; }
+    .tool-card-link:nth-child(4) .tool-icon { background: linear-gradient(145deg, #dff3ff, #acdcee); color: #174e68; }
+    .tool-card-link h3 { margin-top: 1px; font-size: clamp(23px, 2.5vw, 28px); }
+    .tool-card-link p { line-height: 1.55; }
+    .arrow { margin-top: 18px; color: var(--mint-strong); }
+    .tool-section {
+      position: relative;
+      margin-bottom: 38px;
+      padding: clamp(28px, 4.6vw, 52px);
+      border: 1px solid color-mix(in srgb, var(--line) 86%, transparent);
+      border-radius: 30px !important;
+      box-shadow: var(--shadow-small);
+      overflow: hidden;
+    }
+    .tool-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: clamp(28px, 4.6vw, 52px);
+      width: 82px;
+      height: 5px;
+      border-radius: 0 0 6px 6px;
+      background: linear-gradient(90deg, var(--coral), var(--sun));
+    }
+    .tool-title { gap: 18px; margin-bottom: 15px; }
+    .tool-title h2 { font-size: clamp(32px, 4.5vw, 48px); }
+    .tool-title .tool-icon { flex-basis: 58px; width: 58px; height: 58px; }
+    .seo-copy { font-size: 16px; line-height: 1.7; }
+    .workspace { padding-top: 32px; }
+    input, select { min-height: 50px; padding: 12px 14px; border-radius: 12px; transition: border-color .2s ease, box-shadow .2s ease, background .2s ease; }
+    label { margin-bottom: 8px; color: var(--ink); font-weight: 700; }
+    .btn { min-height: 48px; padding: 11px 19px; border-radius: 12px; background: linear-gradient(135deg, var(--navy-strong), var(--navy)); box-shadow: 0 8px 18px color-mix(in srgb, var(--navy) 20%, transparent); transition: transform .18s ease, box-shadow .18s ease, background .18s ease; }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 24px color-mix(in srgb, var(--navy) 25%, transparent); }
+    .btn.secondary, .btn.ghost, .btn.danger { box-shadow: none; }
+    .result-panel, .citation-output, .session-count { border-radius: 18px; }
+    .timer-face { border-width: 14px; box-shadow: 0 18px 44px rgba(18, 95, 79, .12), inset 0 0 0 1px var(--line); }
+    .faq { padding-top: 76px; }
+    .faq h2 { font-size: clamp(40px, 5.5vw, 62px); }
+    details { padding: 22px 4px; }
+    summary { font-size: 19px; }
+    footer { margin-top: 72px; }
+    @media (prefers-color-scheme: dark) {
+      .hero {
+        background:
+          radial-gradient(circle at 84% 12%, rgba(255, 255, 255, .10) 0 6%, transparent 18%),
+          radial-gradient(circle at 10% 90%, rgba(255, 201, 85, .17) 0 8%, transparent 28%),
+          linear-gradient(128deg, #0d6670 0%, #175d54 34%, #253b6b 68%, #713f3d 100%);
+      }
+      .hero h1, .hero-copy { color: #f8fbff; }
+      .hero h1 em { color: #ffb0a6; text-shadow: none; }
+      .kicker { color: #b6f5e7; }
+      .quick-note { background: rgba(13, 31, 43, .9); border-color: rgba(255,255,255,.16); color: #f1f6f9; }
+      .quick-note strong { color: #9ce5f5; }
+      .number { background: #226b58; color: #caffed; }
+      .tool-card-link::after { opacity: .25; }
+      .tool-card-link:nth-child(2) .tool-icon { color: #4f3400; }
+      .tool-card-link:nth-child(3) .tool-icon { color: #6c211c; }
+      .tool-card-link:nth-child(4) .tool-icon { color: #123f55; }
+    }
+    @media (max-width: 820px) {
+      .hero { width: min(100% - 18px, 1380px); margin-top: 9px; border-radius: 28px; }
+      .quick-note { min-height: auto; transform: none; }
+      .tools-grid { gap: 16px; }
+    }
+    @media (max-width: 600px) {
+      .page { width: min(100% - 24px, 1200px); }
+      .hero { margin-bottom: 30px; padding-top: 44px; padding-bottom: 48px; }
+      .hero-grid { gap: 30px; }
+      .hero h1 { font-size: clamp(44px, 14.5vw, 64px); }
+      .hero-copy { font-size: 17px; }
+      .quick-note { padding: 22px; border-radius: 22px 7px 22px 22px; }
+      .jumpbar { margin-bottom: 54px; border-radius: 16px; }
+      .section-head h2 { font-size: 40px; }
+      .tool-card-link { min-height: 0; padding: 22px; grid-template-columns: 52px 1fr; gap: 16px; border-radius: 20px !important; }
+      .tool-icon { width: 52px; height: 52px; padding: 13px; border-radius: 16px; }
+      .tool-card-link h3 { font-size: 23px; }
+      .tool-section { padding: 28px 20px; border-radius: 24px !important; }
+      .tool-section::before { left: 20px; }
+      .tool-title { align-items: center; }
+      .tool-title h2 { font-size: clamp(30px, 9.5vw, 40px); }
+      .tool-title .tool-icon { flex-basis: 50px; width: 50px; height: 50px; }
+      .faq h2 { font-size: 42px; }
+    }
+
+    /* Standalone information views */
+    .info-view[hidden] { display: none; }
+    .info-view { min-height: calc(100vh - 116px); padding: clamp(26px, 5vw, 58px) 0 24px; }
+    .info-shell { width: min(860px, calc(100% - 32px)); margin: 0 auto; }
+    .info-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 24px;
+      padding: 9px 13px;
+      color: var(--navy-strong);
+      background: var(--mint);
+      border-radius: 11px;
+      text-decoration: none;
+      font-weight: 800;
+    }
+    .info-back:focus-visible, .footer-links a:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus) 45%, transparent); outline-offset: 3px; }
+    .info-card {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(28px, 6vw, 64px);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+    }
+    .info-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 8px;
+      background: linear-gradient(90deg, var(--coral), var(--sun) 48%, var(--mint-strong));
+    }
+    .info-label { margin: 0 0 12px; color: var(--mint-strong); font-weight: 800; }
+    .info-card .info-page-title { max-width: none; margin: 0; font-family: var(--display); font-size: clamp(42px, 8vw, 72px); line-height: 1.08; letter-spacing: -.045em; }
+    .info-intro { margin: 18px 0 36px; color: var(--muted); font-size: clamp(18px, 2.4vw, 21px); }
+    .info-card h2 { margin: 34px 0 10px; font-size: clamp(24px, 4vw, 32px); }
+    .info-card h2:first-of-type { margin-top: 0; }
+    .info-card p, .info-card li { color: var(--muted); }
+    .info-card ul { margin: 12px 0 0; padding-left: 22px; }
+    .info-card li + li { margin-top: 8px; }
+    .info-callout {
+      margin: 28px 0 0;
+      padding: 18px 20px;
+      background: color-mix(in srgb, var(--mint) 42%, var(--paper));
+      border-radius: 16px;
+      color: var(--ink) !important;
+    }
+    .info-updated { margin: 32px 0 0; padding-top: 20px; border-top: 1px solid var(--line); font-size: 14px; }
+    .footer-inner { align-items: flex-start; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px 18px; }
+    .footer-links a { font-weight: 750; text-decoration-thickness: 1px; }
+    @media (max-width: 600px) {
+      .info-view { padding-top: 18px; }
+      .info-shell { width: min(100% - 20px, 860px); }
+      .info-card { padding: 32px 22px; border-radius: 24px; }
+      .info-card .info-page-title { font-size: 44px; }
+      .footer-links { justify-content: flex-start; margin-top: 18px; }
+    }
+    .cookie-notice {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 40;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 14px max(18px, calc((100vw - 1160px) / 2)) calc(14px + env(safe-area-inset-bottom));
+      color: var(--ink);
+      background: var(--paper);
+      border-top: 1px solid var(--line);
+      box-shadow: 0 -10px 30px rgba(21, 65, 94, .12);
+    }
+    .cookie-notice p { margin: 0; font-weight: 650; }
+    .cookie-notice .cookie-ok { min-width: 72px; flex: 0 0 auto; }
+    @media (max-width: 600px) {
+      .cookie-notice { justify-content: space-between; gap: 14px; padding-left: 16px; padding-right: 16px; }
+      .cookie-notice p { font-size: 14px; line-height: 1.35; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="page hero-grid">
+        <div>
+          <p class="kicker">Four free online tools, one study desk</p>
+          <h1>Free Online Student Tools for <em>Smarter Study.</em></h1>
+          <p class="hero-copy">Calculate weighted CGPA, estimate Pakistan university admission merit, run a 25-minute Pomodoro focus session, and generate APA 7 or MLA 9 citations—all in one browser-based study toolkit.</p>
+        </div>
+        <aside class="quick-note" aria-label="How to use this page">
+          <strong>Your quick study loop</strong>
+          <ul>
+            <li><span class="number">1</span><span>Check your academic numbers.</span></li>
+            <li><span class="number">2</span><span>Run one focused Pomodoro.</span></li>
+            <li><span class="number">3</span><span>Finish references before you submit.</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <div class="ad-container">
+      <script async="async" data-cfasync="false" src="https://bauval.org/21/585fb4f531ec07cba65dd945efdd74c8"></script>
+      <div id="container-585fb4f531ec07cba65dd945efdd74c8"></div>
+    </div>
+
+    <div class="ad-container">
+      <script>atOptions={'key':'ad1ecdc89aad7529e70faacddbd7786a','format':'iframe','height':50,'width':320,'params':{}};</script>
+      <script src="https://bauval.org/22/ad1ecdc89aad7529e70faacddbd7786a"></script>
+    </div>
+
+    <div class="page">
+      <nav class="jumpbar" aria-label="Jump to a student tool">
+        <a href="#cgpa">CGPA</a>
+        <a href="#merit">Merit</a>
+        <a href="#pomodoro">Pomodoro</a>
+        <a href="#citations">Citations</a>
+      </nav>
+
+      <section aria-labelledby="all-tools-title">
+        <div class="section-head">
+          <h2 id="all-tools-title">Free Academic Calculators & Study Tools</h2>
+          <p>Choose a free online CGPA calculator, university merit calculator, Pomodoro study timer, or APA and MLA citation generator. Every tool works directly in your browser.</p>
+        </div>
+        <div class="tools-grid">
+          <a class="tool-card-link" href="#cgpa">
+            <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h3M8 16h3M15 13v3M13.5 14.5h3"/></svg></span>
+            <span><h3>CGPA Calculator</h3><p>Combine semester GPAs into a weighted cumulative result.</p><span class="arrow">Calculate now →</span></span>
+          </a>
+          <a class="tool-card-link" href="#merit">
+            <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 10 9-5 9 5-9 5-9-5Z"/><path d="M7 12.5V17c3 2 7 2 10 0v-4.5M21 10v6"/></svg></span>
+            <span><h3>Merit Calculator</h3><p>Estimate Pakistan university admission merit with editable weights.</p><span class="arrow">Estimate merit →</span></span>
+          </a>
+          <a class="tool-card-link" href="#pomodoro">
+            <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M9 2h6M12 13l3-3M5 6l-2 2"/></svg></span>
+            <span><h3>Pomodoro Timer</h3><p>Stay on one task for a focused 25-minute session.</p><span class="arrow">Start focusing →</span></span>
+          </a>
+          <a class="tool-card-link" href="#citations">
+            <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
+            <span><h3>Citation Generator</h3><p>Turn book or website details into APA and MLA references.</p><span class="arrow">Build a citation →</span></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="tool-section" id="cgpa" aria-labelledby="cgpa-title">
+        <div class="tool-title">
+          <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h3M8 16h3M15 13v3M13.5 14.5h3"/></svg></span>
+          <h2 id="cgpa-title">CGPA Calculator</h2>
+        </div>
+        <p class="seo-copy">Use this free online CGPA calculator to calculate your cumulative grade point average from semester GPA and credit hours. Enter each semester result, choose any GPA scale from 1.0 to 10.0, and get a weighted CGPA that gives the correct influence to semesters with more credits. This semester GPA calculator is useful for university and college students who want a quick academic progress estimate before checking their institution’s official grading policy.</p>
+        <div class="workspace">
+          <div class="field-grid" style="margin-bottom:18px">
+            <div><label for="gpa-scale">Maximum GPA scale</label><input id="gpa-scale" type="number" min="1" max="10" step="0.1" value="4.0" inputmode="decimal"></div>
+          </div>
+          <div class="semester-list" id="semester-list"></div>
+          <div class="button-row">
+            <button class="btn secondary" id="add-semester" type="button">Add semester</button>
+            <button class="btn" id="calculate-cgpa" type="button">Calculate CGPA</button>
+            <button class="btn ghost" id="reset-cgpa" type="button">Reset</button>
+          </div>
+          <p class="validation" id="cgpa-error" role="alert"></p>
+          <div class="result-panel" id="cgpa-result" aria-live="polite" hidden>
+            <p class="result-label">Your weighted CGPA</p>
+            <p class="result-number" id="cgpa-value">—</p>
+            <p class="result-note" id="cgpa-note"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tool-section" id="merit" aria-labelledby="merit-title">
+        <div class="tool-title">
+          <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 10 9-5 9 5-9 5-9-5Z"/><path d="M7 12.5V17c3 2 7 2 10 0v-4.5M21 10v6"/></svg></span>
+          <h2 id="merit-title">Pakistan University Merit Calculator</h2>
+        </div>
+        <p class="seo-copy">Use this Pakistan university merit calculator to estimate your admission aggregate from Matric, Intermediate or FSc, and entry test percentages. Edit each weight to match the merit formula published by your university or degree program, then calculate a clear percentage estimate. This admission merit calculator supports common Pakistani undergraduate applications, but criteria and cutoffs vary, so always verify the latest official prospectus and admission notice.</p>
+        <div class="workspace">
+          <div class="field-grid three">
+            <div><label for="matric-score">Matric percentage</label><input id="matric-score" type="number" min="0" max="100" step="0.01" placeholder="e.g. 88" inputmode="decimal"></div>
+            <div><label for="inter-score">Intermediate percentage</label><input id="inter-score" type="number" min="0" max="100" step="0.01" placeholder="e.g. 84" inputmode="decimal"></div>
+            <div><label for="test-score">Entry test percentage</label><input id="test-score" type="number" min="0" max="100" step="0.01" placeholder="e.g. 76" inputmode="decimal"></div>
+            <div><label for="matric-weight">Matric weight (%)</label><input id="matric-weight" type="number" min="0" max="100" step="1" value="10" inputmode="numeric"></div>
+            <div><label for="inter-weight">Intermediate weight (%)</label><input id="inter-weight" type="number" min="0" max="100" step="1" value="40" inputmode="numeric"></div>
+            <div><label for="test-weight">Entry test weight (%)</label><input id="test-weight" type="number" min="0" max="100" step="1" value="50" inputmode="numeric"></div>
+          </div>
+          <p class="weight-total" id="weight-total">Weight total: 100%</p>
+          <div class="button-row">
+            <button class="btn" id="calculate-merit" type="button">Calculate merit</button>
+            <button class="btn ghost" id="reset-merit" type="button">Reset</button>
+          </div>
+          <p class="validation" id="merit-error" role="alert"></p>
+          <div class="result-panel" id="merit-result" aria-live="polite" hidden>
+            <p class="result-label">Estimated aggregate merit</p>
+            <p class="result-number"><span id="merit-value">—</span>%</p>
+            <p class="result-note" id="merit-note"></p>
+          </div>
+          <p class="formula-note"><strong>Formula:</strong> each percentage × its weight, then added together. This is an estimate, not an admission decision or an official cutoff.</p>
+        </div>
+      </section>
+
+      <div class="ad-container">
+        <script>atOptions={'key':'38f1f2026ee2e1727c08981e55137663','format':'iframe','height':250,'width':300,'params':{}};</script>
+        <script src="https://bauval.org/22/38f1f2026ee2e1727c08981e55137663"></script>
+      </div>
+
+      <section class="tool-section" id="pomodoro" aria-labelledby="pomodoro-title">
+        <div class="tool-title">
+          <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M9 2h6M12 13l3-3M5 6l-2 2"/></svg></span>
+          <h2 id="pomodoro-title">25-Minute Pomodoro Timer</h2>
+        </div>
+        <p class="seo-copy">Use this free online 25-minute Pomodoro timer to focus on one study task without distractions. Start, pause, resume, or reset the study timer whenever you need, and track completed focus sessions while the page stays open. The classic Pomodoro Technique helps students divide revision, reading, assignments, and exam preparation into manageable concentration periods followed by short breaks.</p>
+        <div class="workspace timer-layout">
+          <div class="timer-face" id="timer-face">
+            <div>
+              <div class="timer-digits" id="timer-digits" aria-live="polite">25:00</div>
+              <div class="timer-mode" id="timer-mode">Ready to focus</div>
+            </div>
+          </div>
+          <div>
+            <h3 style="font-size:28px">One task. One timer.</h3>
+            <p style="color:var(--muted); margin:10px 0 0">Put distractions aside, press start, and work until the chime. Your session counter stays active only while this tab is open.</p>
+            <div class="button-row">
+              <button class="btn" id="timer-start" type="button">Start</button>
+              <button class="btn secondary" id="timer-pause" type="button">Pause</button>
+              <button class="btn ghost" id="timer-reset" type="button">Reset</button>
+            </div>
+            <div class="session-count"><strong id="session-count">0</strong><span>focus sessions completed in this visit</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tool-section" id="citations" aria-labelledby="citations-title">
+        <div class="tool-title">
+          <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
+          <h2 id="citations-title">APA & MLA Citation Generator</h2>
+        </div>
+        <p class="seo-copy">Use this free APA and MLA citation generator to format references for books and websites in seconds. Enter the author, title, publisher, date, or URL to create an APA 7 citation and an MLA 9 citation you can copy into a bibliography or works cited page. Review capitalization, italics, dates, source details, and course-specific instructions before submitting any academic paper or assignment.</p>
+        <div class="workspace">
+          <div class="citation-tabs" role="tablist" aria-label="Citation source type">
+            <button class="source-tab" id="book-tab" role="tab" aria-selected="true" aria-controls="book-fields" type="button">Book</button>
+            <button class="source-tab" id="website-tab" role="tab" aria-selected="false" aria-controls="website-fields" type="button">Website</button>
+          </div>
+          <div id="book-fields" role="tabpanel" aria-labelledby="book-tab">
+            <div class="field-grid">
+              <div><label for="book-author">Author (First Last)</label><input id="book-author" type="text" placeholder="e.g. Maya Angelou"></div>
+              <div><label for="book-title">Book title</label><input id="book-title" type="text" placeholder="e.g. I Know Why the Caged Bird Sings"></div>
+              <div><label for="book-publisher">Publisher</label><input id="book-publisher" type="text" placeholder="e.g. Random House"></div>
+              <div><label for="book-year">Publication year</label><input id="book-year" type="number" min="1000" max="2100" inputmode="numeric" placeholder="e.g. 1969"></div>
+            </div>
+          </div>
+          <div id="website-fields" role="tabpanel" aria-labelledby="website-tab" hidden>
+            <div class="field-grid">
+              <div><label for="web-author">Author (First Last, optional)</label><input id="web-author" type="text" placeholder="e.g. Ayesha Khan"></div>
+              <div><label for="web-page-title">Page or article title</label><input id="web-page-title" type="text" placeholder="e.g. How Memory Works"></div>
+              <div><label for="web-site-title">Website name</label><input id="web-site-title" type="text" placeholder="e.g. Learning Lab"></div>
+              <div><label for="web-date">Publication date (optional)</label><input id="web-date" type="date"></div>
+              <div style="grid-column:1/-1"><label for="web-url">Page URL</label><input id="web-url" type="url" placeholder="https://example.com/article"></div>
+            </div>
+          </div>
+          <div class="button-row">
+            <button class="btn" id="generate-citation" type="button">Generate APA & MLA</button>
+            <button class="btn ghost" id="reset-citation" type="button">Clear</button>
+          </div>
+          <p class="validation" id="citation-error" role="alert"></p>
+          <div class="citation-output" id="citation-output" aria-live="polite" hidden>
+            <div class="citation-style">
+              <h4>APA 7</h4>
+              <p class="citation-text" id="apa-output"></p>
+              <div class="button-row"><button class="btn secondary copy-btn" type="button" data-target="apa-output">Copy APA</button><span class="copy-status" aria-live="polite"></span></div>
+            </div>
+            <div class="citation-style">
+              <h4>MLA 9</h4>
+              <p class="citation-text" id="mla-output"></p>
+              <div class="button-row"><button class="btn secondary copy-btn" type="button" data-target="mla-output">Copy MLA</button><span class="copy-status" aria-live="polite"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Student Tool FAQs: CGPA, Merit, Pomodoro & Citations</h2>
+        <details>
+          <summary>How is CGPA calculated from semester GPA?</summary>
+          <p>A simple CGPA averages all semester GPAs. A weighted CGPA is usually more accurate: multiply each semester GPA by its credit load, add those results, then divide by the total credits. Check your institution’s grading policy for its exact method.</p>
+        </details>
+        <details>
+          <summary>Which merit formula should I use in Pakistan?</summary>
+          <p>There is no single nationwide formula. Universities and programs set their own Matric, Intermediate, and entry test weights, and these can change by admission cycle. Enter the weights shown in the latest official prospectus.</p>
+        </details>
+        <details>
+          <summary>What is the Pomodoro Technique?</summary>
+          <p>The classic pattern is 25 minutes of focused work followed by a short break. After several sessions, take a longer break. The timer is a structure, not a rule—adapt the break length to your workload.</p>
+        </details>
+        <details>
+          <summary>Are generated citations ready to submit?</summary>
+          <p>They are a strong starting point, but citation rules can vary by source type, teacher, and edition. Review the author order, capitalization, publication date, italics, URL, and any course-specific requirements.</p>
+        </details>
+      </section>
+
+      <section class="tool-section" aria-labelledby="student-tools-about-title">
+        <div class="tool-title">
+          <h2 id="student-tools-about-title">About These Free Online Student Tools</h2>
+        </div>
+        <div class="seo-copy" style="max-width:900px; margin-bottom:0">
+          <p>Student Tools brings four practical academic utilities together for school, college, and university work. The free online CGPA calculator helps you combine semester GPA results with credit hours to estimate a weighted cumulative grade point average. Because grading systems differ, you can select the GPA scale that matches your institution and use the result as a planning figure before confirming it against your official transcript or university policy.</p>
+          <p>The Pakistan university merit calculator is designed for students comparing admission possibilities. It combines Matric, Intermediate or FSc, and entry test percentages using editable weights, so you can follow the admission merit formula listed by a university or degree program. Merit criteria and closing aggregates can change by campus, department, quota, and admission cycle, which is why every estimate should be checked against the latest official prospectus.</p>
+          <p>For focused study sessions, the 25-minute Pomodoro timer supports revision, reading, assignments, and exam preparation. A simple focus timer can make a large task easier to begin by turning it into one clear work interval. The session counter records completed Pomodoro rounds only during the current visit, helping you see immediate progress without creating an account.</p>
+          <p>The APA and MLA citation generator formats book and website information into quick APA 7 and MLA 9 references. It is useful when preparing a bibliography, reference list, or works cited page, but students should still review author order, publication details, capitalization, italics, dates, URLs, and teacher-specific requirements. Together, these free browser-based student tools provide fast calculations, structured focus, and practical citation support from one mobile-friendly study page.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section class="info-view" id="privacy-page" aria-labelledby="privacy-title" hidden>
+    <div class="info-shell">
+      <a class="info-back" href="#home" aria-label="Back to all Student Tools">← Back to tools</a>
+      <article class="info-card">
+        <p class="info-label">Student Tools policy</p>
+        <h2 class="info-page-title" id="privacy-title">Privacy Policy</h2>
+        <p class="info-intro">This policy explains what happens to information when you use Student Tools.</p>
+
+        <h2>Your tool inputs stay in your browser</h2>
+        <p>The CGPA calculator, merit calculator, Pomodoro timer, and citation generator run entirely in your web browser. The values you type into these tools are processed on your device and are not sent to Student Tools or stored on a Student Tools server. We do not ask you to create an account, and we do not maintain a database of your calculations, timer sessions, or citation details.</p>
+        <p>Your entries are temporary. They remain available only while the page is open and may disappear when you refresh, close, or leave the page.</p>
+
+        <h2>Google Analytics</h2>
+        <p>Student Tools uses Google Analytics to understand general site usage and improve the website. Google Analytics sends site-usage data to Google. This may include information such as pages viewed, approximate location derived from an internet address, device and browser type, referring page, session timing, and interactions with the site. Student Tools does not send the text or numbers you enter into the four tools as analytics events.</p>
+
+        <h2>Cookies and similar technologies</h2>
+        <p>Google Analytics may use cookies or similar browser identifiers to recognize visits and produce aggregated usage reports. These technologies are provided and controlled by Google. You can limit or block cookies through your browser settings; the four student tools will continue to work, although analytics measurement may be reduced.</p>
+
+        <h2>External services</h2>
+        <p>The page loads Google Analytics and web font files from Google-operated services. When your browser connects to those services, Google may receive technical request data such as your internet address, browser details, and request time under its own policies.</p>
+
+        <h2>Data sharing</h2>
+        <p>Student Tools does not sell personal information. Site-usage information is shared with Google only through the analytics and font services described above. Information may also be disclosed if required by applicable law.</p>
+
+        <h2>Children’s privacy</h2>
+        <p>Student Tools is a general educational utility and does not knowingly request personal information from children. Students should avoid entering personal or confidential information into any online form unless a trusted adult or institution has approved it.</p>
+
+        <h2>Policy updates and contact</h2>
+        <p>This policy may be updated when the website or its services change. Questions about this policy can be raised through the project owner’s <a href="https://github.com/khuramshahzadmarar10-afk" rel="noopener noreferrer">GitHub profile</a>.</p>
+        <p class="info-updated">Last updated: October 10, 2026</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="info-view" id="about-page" aria-labelledby="about-title" hidden>
+    <div class="info-shell">
+      <a class="info-back" href="#home" aria-label="Back to all Student Tools">← Back to tools</a>
+      <article class="info-card">
+        <p class="info-label">About the project</p>
+        <h2 class="info-page-title" id="about-title">About Us</h2>
+        <p class="info-intro">Student Tools is a free collection of practical browser-based utilities built to make common study tasks quicker and clearer.</p>
+
+        <h2>What you can do here</h2>
+        <ul>
+          <li><strong>CGPA Calculator:</strong> combine semester GPAs and credit loads into a weighted cumulative result.</li>
+          <li><strong>Merit Calculator:</strong> estimate Pakistan university admission merit with editable Matric, Intermediate, and entry-test weights.</li>
+          <li><strong>Pomodoro Timer:</strong> run a focused 25-minute study session and count completed sessions during your visit.</li>
+          <li><strong>Citation Generator:</strong> format book or website details into quick APA 7 and MLA 9 references.</li>
+        </ul>
+
+        <h2>Our approach</h2>
+        <p>The utilities are free to use, require no account, and run directly in your browser. We aim to keep each tool simple enough for a quick task while clearly showing when students should confirm a result against an official source.</p>
+
+        <p class="info-callout"><strong>Contact:</strong> Visit the project owner’s <a href="https://github.com/khuramshahzadmarar10-afk" rel="noopener noreferrer">GitHub profile</a>.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="info-view" id="terms-page" aria-labelledby="terms-title" hidden>
+    <div class="info-shell">
+      <a class="info-back" href="#home" aria-label="Back to all Student Tools">← Back to tools</a>
+      <article class="info-card">
+        <p class="info-label">Student Tools terms</p>
+        <h2 class="info-page-title" id="terms-title">Terms of Use</h2>
+        <p class="info-intro">By using Student Tools, you agree to use the results as helpful estimates and study aids—not as official academic decisions.</p>
+
+        <h2>Use of the tools</h2>
+        <p>Student Tools is provided free of charge for personal and educational use. You are responsible for the information you enter and for checking the result before relying on it.</p>
+
+        <h2>Academic calculations</h2>
+        <p>CGPA methods and admission merit formulas can differ between institutions, programs, and admission cycles. Merit results are estimates only. Always check the latest official university prospectus, admissions notice, grading policy, or published criteria.</p>
+
+        <h2>Citations</h2>
+        <p>Generated APA and MLA citations are starting points. Verify author names, titles, dates, capitalization, italics, URLs, source type, and any instructions from your teacher, department, or institution before submitting work.</p>
+
+        <h2>No guarantee</h2>
+        <p>The site is provided on an “as available” basis. While care is taken to make the tools useful, no guarantee is made that every result is complete, current, or suitable for a particular academic decision.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about these terms can be raised through the project owner’s <a href="https://github.com/khuramshahzadmarar10-afk" rel="noopener noreferrer">GitHub profile</a>.</p>
+        <p class="info-updated">Last updated: October 10, 2026</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <section class="page footer-tools" aria-labelledby="more-free-tools-title">
+      <h2 id="more-free-tools-title">More Free Tools</h2>
+      <nav class="footer-tools-grid" aria-label="More free tool websites">
+        <a class="footer-tool-link" href="https://khuramshahzadmarar10-afk.github.io/islamic-tools/">
+          <strong>NoorPulse (Islamic Tools)</strong>
+          <span>Prayer times, Qibla, Hijri calendar</span>
+        </a>
+        <a class="footer-tool-link" href="https://khuramshahzadmarar10-afk.github.io/pakistan-finance-hub/">
+          <strong>FinPulse</strong>
+          <span>Finance calculators &amp; market rates</span>
+        </a>
+        <a class="footer-tool-link" href="https://khuramshahzadmarar10-afk.github.io/ai-era-tools/">
+          <strong>AI Era Tools</strong>
+          <span>AI-powered utilities</span>
+        </a>
+        <a class="footer-tool-link" href="https://khuramshahzadmarar10-afk.github.io/health-calculators/">
+          <strong>Health Calculators</strong>
+          <span>BMI, calories &amp; fitness tools</span>
+        </a>
+        <a class="footer-tool-link" href="https://khuramshahzadmarar10-afk.github.io/everyday-tools-2/">
+          <strong>Everyday Tools 2</strong>
+          <span>Daily utility tools</span>
+        </a>
+        <a class="footer-tool-link" href="https://khuramshahzadmarar10-afk.github.io/pdf-tools/">
+          <strong>PDF Tools</strong>
+          <span>Merge, split, compress PDFs</span>
+        </a>
+      </nav>
+    </section>
+    <div class="page footer-inner">
+      <p class="footer-mark">Made for study days that need a little structure.</p>
+      <nav class="footer-links" aria-label="Website information">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#about">About Us</a>
+        <a href="#terms">Terms of Use</a>
+        <a href="https://github.com/khuramshahzadmarar10-afk" rel="noopener noreferrer">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-notice" role="region" aria-label="Cookie notice">
+    <p>We use cookies to improve your experience.</p>
+    <button class="btn cookie-ok" type="button" onclick="this.parentElement.style.display='none'">OK</button>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      function byId(id) { return document.getElementById(id); }
+      function clampNumber(value, min, max) { return Number.isFinite(value) && value >= min && value <= max; }
+
+      var semesterList = byId("semester-list");
+      var semesterIndex = 0;
+
+      function addSemester(gpa, credits) {
+        semesterIndex += 1;
+        var row = document.createElement("div");
+        row.className = "semester-row";
+        row.innerHTML = '<div class="semester-name"><label>Semester</label><input class="semester-label" type="text" value="Semester ' + semesterIndex + '" aria-label="Semester name"></div>' +
+          '<div><label>GPA</label><input class="semester-gpa" type="number" min="0" step="0.01" inputmode="decimal" placeholder="e.g. 3.45"' + (gpa !== undefined ? ' value="' + gpa + '"' : '') + '></div>' +
+          '<div><label>Credits</label><input class="semester-credits" type="number" min="0.1" step="0.5" inputmode="decimal" value="' + (credits || 1) + '"></div>' +
+          '<button class="icon-btn remove-semester" type="button" aria-label="Remove this semester"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M9 7V4h6v3M8 7l1 13h6l1-13"/></svg></button>';
+        semesterList.appendChild(row);
+        row.querySelector(".remove-semester").addEventListener("click", function () {
+          if (semesterList.children.length > 1) row.remove();
+          else {
+            row.querySelector(".semester-gpa").value = "";
+            row.querySelector(".semester-credits").value = "1";
+          }
+        });
+      }
+      function resetCgpa() {
+        semesterList.innerHTML = "";
+        semesterIndex = 0;
+        byId("gpa-scale").value = "4.0";
+        addSemester(undefined, 1);
+        addSemester(undefined, 1);
+        byId("cgpa-error").textContent = "";
+        byId("cgpa-result").hidden = true;
+      }
+      byId("add-semester").addEventListener("click", function () { addSemester(undefined, 1); });
+      byId("reset-cgpa").addEventListener("click", resetCgpa);
+      byId("calculate-cgpa").addEventListener("click", function () {
+        var scale = parseFloat(byId("gpa-scale").value);
+        var rows = Array.prototype.slice.call(semesterList.querySelectorAll(".semester-row"));
+        var weightedTotal = 0, creditsTotal = 0, validRows = 0;
+        byId("cgpa-error").textContent = "";
+        if (!clampNumber(scale, 1, 10)) {
+          byId("cgpa-error").textContent = "Enter a maximum GPA scale between 1 and 10.";
+          byId("cgpa-result").hidden = true;
+          return;
+        }
+        for (var i = 0; i < rows.length; i += 1) {
+          var gpaText = rows[i].querySelector(".semester-gpa").value.trim();
+          if (!gpaText) continue;
+          var gpa = parseFloat(gpaText);
+          var credits = parseFloat(rows[i].querySelector(".semester-credits").value);
+          if (!clampNumber(gpa, 0, scale) || !Number.isFinite(credits) || credits <= 0) {
+            byId("cgpa-error").textContent = "Each completed row needs a GPA from 0 to " + scale + " and credits above 0.";
+            byId("cgpa-result").hidden = true;
+            return;
+          }
+          weightedTotal += gpa * credits;
+          creditsTotal += credits;
+          validRows += 1;
+        }
+        if (!validRows) {
+          byId("cgpa-error").textContent = "Enter at least one semester GPA.";
+          byId("cgpa-result").hidden = true;
+          return;
+        }
+        var cgpa = weightedTotal / creditsTotal;
+        byId("cgpa-value").textContent = cgpa.toFixed(2) + " / " + scale.toFixed(1);
+        byId("cgpa-note").textContent = "Based on " + validRows + (validRows === 1 ? " semester" : " semesters") + " and " + creditsTotal.toFixed(creditsTotal % 1 ? 1 : 0) + " total credits.";
+        byId("cgpa-result").hidden = false;
+      });
+      resetCgpa();
+
+      var weightIds = ["matric-weight", "inter-weight", "test-weight"];
+      function updateWeightTotal() {
+        var total = weightIds.reduce(function (sum, id) { return sum + (parseFloat(byId(id).value) || 0); }, 0);
+        byId("weight-total").textContent = "Weight total: " + total + "%" + (total === 100 ? " — ready" : " — must equal 100%");
+        byId("weight-total").style.color = total === 100 ? "var(--mint-strong)" : "var(--danger)";
+      }
+      weightIds.forEach(function (id) { byId(id).addEventListener("input", updateWeightTotal); });
+      byId("calculate-merit").addEventListener("click", function () {
+        var scoreIds = ["matric-score", "inter-score", "test-score"];
+        var scores = scoreIds.map(function (id) { return parseFloat(byId(id).value); });
+        var weights = weightIds.map(function (id) { return parseFloat(byId(id).value); });
+        byId("merit-error").textContent = "";
+        if (scores.some(function (n) { return !clampNumber(n, 0, 100); })) {
+          byId("merit-error").textContent = "Enter all three percentages from 0 to 100.";
+          byId("merit-result").hidden = true;
+          return;
+        }
+        if (weights.some(function (n) { return !clampNumber(n, 0, 100); }) || Math.abs(weights.reduce(function (a, b) { return a + b; }, 0) - 100) > 0.001) {
+          byId("merit-error").textContent = "Weights must be from 0 to 100 and add up to exactly 100%.";
+          byId("merit-result").hidden = true;
+          return;
+        }
+        var merit = scores.reduce(function (sum, score, i) { return sum + score * weights[i] / 100; }, 0);
+        byId("merit-value").textContent = merit.toFixed(2);
+        byId("merit-note").textContent = "Calculated with " + weights[0] + "% Matric, " + weights[1] + "% Intermediate, and " + weights[2] + "% entry test weight.";
+        byId("merit-result").hidden = false;
+      });
+      byId("reset-merit").addEventListener("click", function () {
+        ["matric-score", "inter-score", "test-score"].forEach(function (id) { byId(id).value = ""; });
+        byId("matric-weight").value = "10";
+        byId("inter-weight").value = "40";
+        byId("test-weight").value = "50";
+        byId("merit-error").textContent = "";
+        byId("merit-result").hidden = true;
+        updateWeightTotal();
+      });
+      updateWeightTotal();
+
+      var timerSeconds = 25 * 60;
+      var timerRunning = false;
+      var timerInterval = null;
+      var timerDeadline = null;
+      var sessions = 0;
+      var audioContext = null;
+      function renderTimer() {
+        var minutes = Math.floor(timerSeconds / 60);
+        var seconds = timerSeconds % 60;
+        byId("timer-digits").textContent = String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
+        document.title = (timerRunning ? byId("timer-digits").textContent + " · " : "") + "Free Online Student Tools | CGPA, Merit, Pomodoro & Citations";
+      }
+      function chime() {
+        try {
+          if (!audioContext) audioContext = new (window.AudioContext || window.webkitAudioContext)();
+          var now = audioContext.currentTime;
+          [523.25, 659.25, 783.99].forEach(function (freq, i) {
+            var osc = audioContext.createOscillator();
+            var gain = audioContext.createGain();
+            osc.frequency.value = freq;
+            gain.gain.setValueAtTime(0.0001, now + i * .15);
+            gain.gain.exponentialRampToValueAtTime(.12, now + i * .15 + .02);
+            gain.gain.exponentialRampToValueAtTime(.0001, now + i * .15 + .32);
+            osc.connect(gain); gain.connect(audioContext.destination);
+            osc.start(now + i * .15); osc.stop(now + i * .15 + .34);
+          });
+        } catch (e) { /* Sound is optional; timer still completes. */ }
+      }
+      function stopTimer() { timerRunning = false; if (timerInterval) clearInterval(timerInterval); timerInterval = null; }
+      function tickTimer() {
+        timerSeconds = Math.max(0, Math.ceil((timerDeadline - Date.now()) / 1000));
+        renderTimer();
+        if (timerSeconds <= 0) {
+          stopTimer(); sessions += 1; byId("session-count").textContent = sessions;
+          byId("timer-mode").textContent = "Session complete — take a break";
+          byId("timer-face").style.borderColor = "var(--sun)";
+          byId("timer-start").textContent = "Start another";
+          chime();
+        }
+      }
+      byId("timer-start").addEventListener("click", function () {
+        if (timerRunning) return;
+        if (timerSeconds <= 0) timerSeconds = 25 * 60;
+        try {
+          if (!audioContext) audioContext = new (window.AudioContext || window.webkitAudioContext)();
+          if (audioContext.state === "suspended") audioContext.resume();
+        } catch (e) { /* no-op */ }
+        timerDeadline = Date.now() + timerSeconds * 1000;
+        timerRunning = true;
+        byId("timer-mode").textContent = "Focus session in progress";
+        byId("timer-face").style.borderColor = "var(--mint)";
+        byId("timer-start").textContent = "Running";
+        timerInterval = setInterval(tickTimer, 250);
+        tickTimer();
+      });
+      byId("timer-pause").addEventListener("click", function () {
+        if (!timerRunning) return;
+        tickTimer(); stopTimer();
+        byId("timer-mode").textContent = "Paused";
+        byId("timer-start").textContent = "Resume";
+      });
+      byId("timer-reset").addEventListener("click", function () {
+        stopTimer(); timerSeconds = 25 * 60;
+        byId("timer-mode").textContent = "Ready to focus";
+        byId("timer-start").textContent = "Start";
+        byId("timer-face").style.borderColor = "var(--mint)";
+        renderTimer();
+      });
+      renderTimer();
+
+      var sourceType = "book";
+      function setSource(type) {
+        sourceType = type;
+        var book = type === "book";
+        byId("book-fields").hidden = !book;
+        byId("website-fields").hidden = book;
+        byId("book-tab").setAttribute("aria-selected", String(book));
+        byId("website-tab").setAttribute("aria-selected", String(!book));
+        byId("citation-output").hidden = true;
+        byId("citation-error").textContent = "";
+      }
+      byId("book-tab").addEventListener("click", function () { setSource("book"); });
+      byId("website-tab").addEventListener("click", function () { setSource("website"); });
+      function escapeCitationText(text) { return text.trim().replace(/\s+/g, " "); }
+      function authorParts(name) {
+        var clean = escapeCitationText(name);
+        if (!clean) return { apa: "", mla: "" };
+        var parts = clean.split(" ");
+        if (parts.length === 1) return { apa: parts[0], mla: parts[0] };
+        var last = parts.pop();
+        var firsts = parts;
+        var initials = firsts.map(function (part) { return part.charAt(0).toUpperCase() + "."; }).join(" ");
+        return { apa: last + ", " + initials, mla: last + ", " + firsts.join(" ") };
+      }
+      function formatDate(dateString, style) {
+        if (!dateString) return "";
+        var p = dateString.split("-");
+        var d = new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
+        var month = d.toLocaleString("en-US", { month: style === "mla" ? "short" : "long" });
+        return style === "mla" ? Number(p[2]) + " " + month.replace("Sep", "Sept") + ". " + p[0] : month + " " + Number(p[2]) + ", " + p[0];
+      }
+      byId("generate-citation").addEventListener("click", function () {
+        var apa = "", mla = "";
+        byId("citation-error").textContent = "";
+        if (sourceType === "book") {
+          var author = authorParts(byId("book-author").value);
+          var title = escapeCitationText(byId("book-title").value);
+          var publisher = escapeCitationText(byId("book-publisher").value);
+          var year = byId("book-year").value.trim();
+          if (!author.apa || !title || !publisher || !year) {
+            byId("citation-error").textContent = "Complete the author, title, publisher, and year fields.";
+            byId("citation-output").hidden = true; return;
+          }
+          apa = author.apa + " (" + year + "). " + title + ". " + publisher + ".";
+          mla = author.mla + ". " + title + ". " + publisher + ", " + year + ".";
+        } else {
+          var webAuthor = authorParts(byId("web-author").value);
+          var pageTitle = escapeCitationText(byId("web-page-title").value);
+          var siteTitle = escapeCitationText(byId("web-site-title").value);
+          var date = byId("web-date").value;
+          var url = escapeCitationText(byId("web-url").value);
+          if (!pageTitle || !siteTitle || !url) {
+            byId("citation-error").textContent = "Enter the page title, website name, and URL.";
+            byId("citation-output").hidden = true; return;
+          }
+          try { new URL(url); } catch (e) {
+            byId("citation-error").textContent = "Enter a complete URL beginning with http:// or https://.";
+            byId("citation-output").hidden = true; return;
+          }
+          var apaLead = webAuthor.apa ? webAuthor.apa + ". " : "";
+          var apaDate = date ? "(" + formatDate(date, "apa") + "). " : "(n.d.). ";
+          apa = apaLead + apaDate + pageTitle + ". " + siteTitle + ". " + url;
+          var mlaLead = webAuthor.mla ? webAuthor.mla + ". " : "";
+          var mlaDate = date ? formatDate(date, "mla") + ", " : "";
+          mla = mlaLead + '“' + pageTitle + '.” ' + siteTitle + ", " + mlaDate + url + ".";
+        }
+        byId("apa-output").textContent = apa;
+        byId("mla-output").textContent = mla;
+        byId("citation-output").hidden = false;
+      });
+      byId("reset-citation").addEventListener("click", function () {
+        ["book-author", "book-title", "book-publisher", "book-year", "web-author", "web-page-title", "web-site-title", "web-date", "web-url"].forEach(function (id) { byId(id).value = ""; });
+        byId("citation-error").textContent = "";
+        byId("citation-output").hidden = true;
+      });
+      Array.prototype.forEach.call(document.querySelectorAll(".copy-btn"), function (button) {
+        button.addEventListener("click", function () {
+          var text = byId(button.getAttribute("data-target")).textContent;
+          var status = button.parentElement.querySelector(".copy-status");
+          function done(message) { status.textContent = message; setTimeout(function () { status.textContent = ""; }, 1800); }
+          if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(text).then(function () { done("Copied"); }).catch(function () { done("Select and copy the text above"); });
+          } else {
+            var area = document.createElement("textarea"); area.value = text; area.style.position = "fixed"; area.style.opacity = "0"; document.body.appendChild(area); area.select();
+            try { document.execCommand("copy"); done("Copied"); } catch (e) { done("Select and copy the text above"); }
+            document.body.removeChild(area);
+          }
+        });
+      });
+    }());
+  </script>
+  <script>
+    (function () {
+      "use strict";
+      var main = document.querySelector("main");
+      var pages = {
+        privacy: document.getElementById("privacy-page"),
+        about: document.getElementById("about-page"),
+        terms: document.getElementById("terms-page")
+      };
+      var titles = {
+        privacy: "Privacy Policy — Student Tools",
+        about: "About Us — Student Tools",
+        terms: "Terms of Use — Student Tools"
+      };
+      var defaultTitle = "Free Online Student Tools | CGPA, Merit, Pomodoro & Citations";
+
+      function route() {
+        var key = window.location.hash.slice(1).toLowerCase();
+        var isInfoPage = Object.prototype.hasOwnProperty.call(pages, key);
+        main.hidden = isInfoPage;
+        Object.keys(pages).forEach(function (name) { pages[name].hidden = name !== key; });
+        document.title = isInfoPage ? titles[key] : defaultTitle;
+        if (isInfoPage || key === "home") window.scrollTo(0, 0);
+      }
+
+      window.addEventListener("hashchange", route);
+      route();
+    }());
+  </script>
+  <script data-cfasync="false" src="https://bauval.org/14/b2f6d6fc88ad8f9bae57f1751e71b48d"></script>
+</body>
+</html>
