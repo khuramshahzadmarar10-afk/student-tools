@@ -1,0 +1,5 @@
+# ParhaiPlus — Student Tools
+> Free student tools: resume builder with PDF download, CGPA calculator, Pakistan university merit calculator, Pomodoro focus timer, word counter and APA/MLA citation generator. Free, no sign-up.
+
+- Home: https://khuramshahzadmarar10-afk.github.io/student-tools/
+- Sitemap: https://khuramshahzadmarar10-afk.github.io/student-tools/sitemap.xml
